@@ -419,6 +419,48 @@ namespace natureApi.Migrations
                             Longitude = -93.367999999999995,
                             Name = "Sima de las Cotorras",
                             OpeningHours = "07:00-17:00"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Accessible = true,
+                            Category = "cenote",
+                            CreatedAt = new DateTime(2024, 4, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Cenote de agua cristalina rodeado de vegetación.",
+                            ElevationMeters = 0,
+                            EntryFee = 150.0,
+                            Latitude = 20.673999999999999,
+                            Longitude = -88.567999999999998,
+                            Name = "Cenote Ik Kil",
+                            OpeningHours = "09:00-17:00"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Accessible = true,
+                            Category = "cascada",
+                            CreatedAt = new DateTime(2024, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Impresionante cascada en la Sierra Tarahumara.",
+                            ElevationMeters = 1800,
+                            EntryFee = 80.0,
+                            Latitude = 28.187999999999999,
+                            Longitude = -107.209,
+                            Name = "Cascada Basaseachi",
+                            OpeningHours = "08:00-18:00"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Accessible = true,
+                            Category = "reserva",
+                            CreatedAt = new DateTime(2024, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Área protegida de selva y manglares en Quintana Roo.",
+                            ElevationMeters = 10,
+                            EntryFee = 100.0,
+                            Latitude = 19.363,
+                            Longitude = -87.754999999999995,
+                            Name = "Reserva de la Biósfera Sian Ka'an",
+                            OpeningHours = "08:00-17:00"
                         });
                 });
 

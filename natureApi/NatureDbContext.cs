@@ -88,6 +88,45 @@ public class NatureDbContext : DbContext
                 ElevationMeters = 900, Accessible = true,
                 EntryFee = 60, OpeningHours = "07:00-17:00",
                 CreatedAt = new DateTime(2024, 01, 01)
+            },
+            new Place
+            {
+                Id = 6,
+                Name = "Cenote Ik Kil",
+                Description = "Cenote de agua cristalina rodeado de vegetación.",
+                Category = "cenote",
+                Latitude = 20.674, Longitude = -88.568, // valores aproximados
+                ElevationMeters = 0,
+                Accessible = true,
+                EntryFee = 150,
+                OpeningHours = "09:00-17:00",
+                CreatedAt = new DateTime(2024, 04, 10)
+            },
+            new Place
+            {
+                Id = 7,
+                Name = "Cascada Basaseachi",
+                Description = "Impresionante cascada en la Sierra Tarahumara.",
+                Category = "cascada",
+                Latitude = 28.188, Longitude = -107.209,
+                ElevationMeters = 1800,
+                Accessible = true,
+                EntryFee = 80,
+                OpeningHours = "08:00-18:00",
+                CreatedAt = new DateTime(2024, 05, 05)
+            },
+            new Place
+            {
+                Id = 8,
+                Name = "Reserva de la Biósfera Sian Ka'an",
+                Description = "Área protegida de selva y manglares en Quintana Roo.",
+                Category = "reserva",
+                Latitude = 19.363, Longitude = -87.755,
+                ElevationMeters = 10,
+                Accessible = true,
+                EntryFee = 100,
+                OpeningHours = "08:00-17:00",
+                CreatedAt = new DateTime(2024, 06, 20)
             }
         );
 

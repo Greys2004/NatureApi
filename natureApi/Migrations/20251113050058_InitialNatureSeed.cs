@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace natureApi.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class InitialNatureSeed : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -189,7 +189,10 @@ namespace natureApi.Migrations
                     { 2, true, "cueva", new DateTime(2024, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), "Cueva vertical en San Luis Potosí famosa por el vuelo de miles de aves.", 900, 100.0, 21.597000000000001, -99.097999999999999, "Sótano de las Golondrinas", "07:00-18:00" },
                     { 3, true, "volcán", new DateTime(2024, 2, 26, 0, 0, 0, 0, DateTimeKind.Unspecified), "Campo volcánico con cráteres impresionantes en Sonora.", 1200, 70.0, 31.783000000000001, -113.533, "Cráteres de El Pinacate", "08:00-17:00" },
                     { 4, true, "formación geológica", new DateTime(2024, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), "Formaciones geométricas de basalto en Hidalgo.", 2100, 80.0, 20.210999999999999, -98.581000000000003, "Prismas Basálticos", "09:00-18:00" },
-                    { 5, true, "sima", new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Hundimiento natural en Chiapas con selva en el interior.", 900, 60.0, 16.725999999999999, -93.367999999999995, "Sima de las Cotorras", "07:00-17:00" }
+                    { 5, true, "sima", new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Hundimiento natural en Chiapas con selva en el interior.", 900, 60.0, 16.725999999999999, -93.367999999999995, "Sima de las Cotorras", "07:00-17:00" },
+                    { 6, true, "cenote", new DateTime(2024, 4, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "Cenote de agua cristalina rodeado de vegetación.", 0, 150.0, 20.673999999999999, -88.567999999999998, "Cenote Ik Kil", "09:00-17:00" },
+                    { 7, true, "cascada", new DateTime(2024, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "Impresionante cascada en la Sierra Tarahumara.", 1800, 80.0, 28.187999999999999, -107.209, "Cascada Basaseachi", "08:00-18:00" },
+                    { 8, true, "reserva", new DateTime(2024, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "Área protegida de selva y manglares en Quintana Roo.", 10, 100.0, 19.363, -87.754999999999995, "Reserva de la Biósfera Sian Ka'an", "08:00-17:00" }
                 });
 
             migrationBuilder.InsertData(
@@ -198,10 +201,29 @@ namespace natureApi.Migrations
                 values: new object[,]
                 {
                     { 1, "Reserva de la Biósfera Mariposa Monarca", 1, "https://cdn.milenio.com/uploads/media/2015/10/23/tala-ilegal-reserva-biosfera-mariposa.jpeg", 0 },
-                    { 2, "Sótano de las Golondrinas", 2, "https://transpais.com.mx/wp-content/uploads/2023/04/golondrinas.jpg", 0 },
-                    { 3, "Cráteres de El Pinacate", 3, "https://rocateca.unison.mx/wp-content/uploads/2020/09/el-elegante.jpg", 0 },
-                    { 4, "Prismas Basálticos", 4, "https://www.huascaguiaturistica.com/huasca-imagenes/1-prismas-basalticos.jpg", 0 },
-                    { 5, "Sima de las Cotorras", 5, "https://mxc.com.mx/wp-content/uploads/2021/02/sima-de-las-cotorras-1024x576.jpg", 0 }
+                    { 2, "Reserva de la Biósfera Mariposa Monarca", 1, "https://www.patrimoniomundial.com.mx/wp-content/uploads/2013/10/Monarcas1.jpg", 0 },
+                    { 3, "Reserva de la Biósfera Mariposa Monarca", 1, "https://programadestinosmexico.com/wp-content/uploads/2023/12/RESERVA-DE-LA-MARIPOSA-MONARCA.jpg", 0 },
+                    { 4, "Sótano de las Golondrinas", 2, "https://transpais.com.mx/wp-content/uploads/2023/04/golondrinas.jpg", 0 },
+                    { 5, "Sótano de las Golondrinas", 2, "https://revistaaventurero.com.mx/wp-content/uploads/2018/01/SOTANO-DE-LAS-GOLONDRINAS-www.puntofape.com_.jpg", 0 },
+                    { 6, "Sótano de las Golondrinas", 2, "https://img.travesiasdigital.com/cdn-cgi/image/quality=90,format=auto,onerror=redirect/2019/03/sotano-de-las-golondrinas-aves.jpg", 0 },
+                    { 7, "Cráteres de El Pinacate", 3, "https://rocateca.unison.mx/wp-content/uploads/2020/09/el-elegante.jpg", 0 },
+                    { 8, "Cráteres de El Pinacate", 3, "https://sic.cultura.gob.mx/images/38880", 0 },
+                    { 9, "Cráteres de El Pinacate", 3, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqkp-cTeUXQ1sl7yLsu1K4v-DKs-CzdWrvrg&s", 0 },
+                    { 10, "Prismas Basálticos", 4, "https://www.huascaguiaturistica.com/huasca-imagenes/1-prismas-basalticos.jpg", 0 },
+                    { 11, "Prismas Basálticos", 4, "https://www.mexicodestinos.com/blog/wp-content/uploads/2021/07/prismas-630x420.jpg", 0 },
+                    { 12, "Prismas Basálticos", 4, "https://www.huascaguiaturistica.com/huasca-imagenes/1-prismas-basalticos.jpg", 0 },
+                    { 13, "Sima de las Cotorras", 5, "https://mxc.com.mx/wp-content/uploads/2021/02/sima-de-las-cotorras-1024x576.jpg", 0 },
+                    { 14, "Sima de las Cotorras", 5, "https://www.mexicodesconocido.com.mx/wp-content/uploads/2016/09/WhatsApp-Image-2020-07-15-at-19.03.28.jpeg", 0 },
+                    { 15, "Sima de las Cotorras", 5, "https://disfrutachiapas.com/wp-content/uploads/2023/12/simacotorras-1024x683.jpg", 0 },
+                    { 16, "Cenote Ik Kil", 6, "https://dexter.cancunairporttransportations.com/vendor/blog/gallery/2022/05/cenote_ik_kil-tour.jpg", 0 },
+                    { 17, "Cenote Ik Kil", 6, "https://topyucatan.com/storage/uploads/178495071-1332905113762718-8561404485712747862-n-1626902981.jpg", 0 },
+                    { 18, "Cenote Ik Kil", 6, "https://static.vecteezy.com/system/resources/previews/060/531/480/large_2x/cenote-ik-kil-yucatan-mexico-sunlight-illuminating-turquoise-water-in-a-mysterious-cave-photo.jpg", 0 },
+                    { 19, "Cascada Basaseachi", 7, "https://www.gob.mx/cms/uploads/image/file/247330/Basaseachi__foto_Teresita_Lasso__18_.JPG", 0 },
+                    { 20, "Cascada Basaseachi", 7, "https://mxc.com.mx/wp-content/uploads/2020/07/292750-684x1024.jpg", 0 },
+                    { 21, "Cascada Basaseachi", 7, "https://chihuahua.gob.mx/sites/default/files/grupos/user599/cascada_de_basaseachi_2.jpg", 0 },
+                    { 22, "Reserva de la Biósfera Sian Ka'an", 8, "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/6f/10/c3.jpg", 0 },
+                    { 23, "Reserva de la Biósfera Sian Ka'an", 8, "https://caleatulum.com/wp-content/uploads/2025/04/Reserva-de-la-Biosfera-Sian-Kaan--1078x595.jpg", 0 },
+                    { 24, "Reserva de la Biósfera Sian Ka'an", 8, "https://elmomentoqroo.mx/wp-content/uploads/2025/06/Preservacion-de-la-flora-y-fauna-en-la-Reserva-de-Sian-Kaan-Foto-por-Patrimonio-Mundial-de-Mexico-UNESCO.png", 0 }
                 });
 
             migrationBuilder.InsertData(
@@ -217,7 +239,13 @@ namespace natureApi.Migrations
                     { 1, 4 },
                     { 4, 4 },
                     { 2, 5 },
-                    { 3, 5 }
+                    { 3, 5 },
+                    { 2, 6 },
+                    { 3, 6 },
+                    { 1, 7 },
+                    { 4, 7 },
+                    { 1, 8 },
+                    { 3, 8 }
                 });
 
             migrationBuilder.InsertData(

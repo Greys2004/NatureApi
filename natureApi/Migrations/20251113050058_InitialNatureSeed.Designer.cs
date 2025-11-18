@@ -12,8 +12,8 @@ using NatureApi;
 namespace natureApi.Migrations
 {
     [DbContext(typeof(NatureDbContext))]
-    [Migration("20250905053545_Initial")]
-    partial class Initial
+    [Migration("20251113050058_InitialNatureSeed")]
+    partial class InitialNatureSeed
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -124,6 +124,22 @@ namespace natureApi.Migrations
                         new
                         {
                             Id = 2,
+                            Description = "Reserva de la Biósfera Mariposa Monarca",
+                            PlaceId = 1,
+                            Url = "https://www.patrimoniomundial.com.mx/wp-content/uploads/2013/10/Monarcas1.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Reserva de la Biósfera Mariposa Monarca",
+                            PlaceId = 1,
+                            Url = "https://programadestinosmexico.com/wp-content/uploads/2023/12/RESERVA-DE-LA-MARIPOSA-MONARCA.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 4,
                             Description = "Sótano de las Golondrinas",
                             PlaceId = 2,
                             Url = "https://transpais.com.mx/wp-content/uploads/2023/04/golondrinas.jpg",
@@ -131,7 +147,23 @@ namespace natureApi.Migrations
                         },
                         new
                         {
-                            Id = 3,
+                            Id = 5,
+                            Description = "Sótano de las Golondrinas",
+                            PlaceId = 2,
+                            Url = "https://revistaaventurero.com.mx/wp-content/uploads/2018/01/SOTANO-DE-LAS-GOLONDRINAS-www.puntofape.com_.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Sótano de las Golondrinas",
+                            PlaceId = 2,
+                            Url = "https://img.travesiasdigital.com/cdn-cgi/image/quality=90,format=auto,onerror=redirect/2019/03/sotano-de-las-golondrinas-aves.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 7,
                             Description = "Cráteres de El Pinacate",
                             PlaceId = 3,
                             Url = "https://rocateca.unison.mx/wp-content/uploads/2020/09/el-elegante.jpg",
@@ -139,7 +171,23 @@ namespace natureApi.Migrations
                         },
                         new
                         {
-                            Id = 4,
+                            Id = 8,
+                            Description = "Cráteres de El Pinacate",
+                            PlaceId = 3,
+                            Url = "https://sic.cultura.gob.mx/images/38880",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Description = "Cráteres de El Pinacate",
+                            PlaceId = 3,
+                            Url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqkp-cTeUXQ1sl7yLsu1K4v-DKs-CzdWrvrg&s",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 10,
                             Description = "Prismas Basálticos",
                             PlaceId = 4,
                             Url = "https://www.huascaguiaturistica.com/huasca-imagenes/1-prismas-basalticos.jpg",
@@ -147,10 +195,114 @@ namespace natureApi.Migrations
                         },
                         new
                         {
-                            Id = 5,
+                            Id = 11,
+                            Description = "Prismas Basálticos",
+                            PlaceId = 4,
+                            Url = "https://www.mexicodestinos.com/blog/wp-content/uploads/2021/07/prismas-630x420.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Description = "Prismas Basálticos",
+                            PlaceId = 4,
+                            Url = "https://www.huascaguiaturistica.com/huasca-imagenes/1-prismas-basalticos.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 13,
                             Description = "Sima de las Cotorras",
                             PlaceId = 5,
                             Url = "https://mxc.com.mx/wp-content/uploads/2021/02/sima-de-las-cotorras-1024x576.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Description = "Sima de las Cotorras",
+                            PlaceId = 5,
+                            Url = "https://www.mexicodesconocido.com.mx/wp-content/uploads/2016/09/WhatsApp-Image-2020-07-15-at-19.03.28.jpeg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Description = "Sima de las Cotorras",
+                            PlaceId = 5,
+                            Url = "https://disfrutachiapas.com/wp-content/uploads/2023/12/simacotorras-1024x683.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Description = "Cenote Ik Kil",
+                            PlaceId = 6,
+                            Url = "https://dexter.cancunairporttransportations.com/vendor/blog/gallery/2022/05/cenote_ik_kil-tour.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Description = "Cenote Ik Kil",
+                            PlaceId = 6,
+                            Url = "https://topyucatan.com/storage/uploads/178495071-1332905113762718-8561404485712747862-n-1626902981.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Description = "Cenote Ik Kil",
+                            PlaceId = 6,
+                            Url = "https://static.vecteezy.com/system/resources/previews/060/531/480/large_2x/cenote-ik-kil-yucatan-mexico-sunlight-illuminating-turquoise-water-in-a-mysterious-cave-photo.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Description = "Cascada Basaseachi",
+                            PlaceId = 7,
+                            Url = "https://www.gob.mx/cms/uploads/image/file/247330/Basaseachi__foto_Teresita_Lasso__18_.JPG",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Description = "Cascada Basaseachi",
+                            PlaceId = 7,
+                            Url = "https://mxc.com.mx/wp-content/uploads/2020/07/292750-684x1024.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Description = "Cascada Basaseachi",
+                            PlaceId = 7,
+                            Url = "https://chihuahua.gob.mx/sites/default/files/grupos/user599/cascada_de_basaseachi_2.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Description = "Reserva de la Biósfera Sian Ka'an",
+                            PlaceId = 8,
+                            Url = "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/6f/10/c3.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Description = "Reserva de la Biósfera Sian Ka'an",
+                            PlaceId = 8,
+                            Url = "https://caleatulum.com/wp-content/uploads/2025/04/Reserva-de-la-Biosfera-Sian-Kaan--1078x595.jpg",
+                            idPlace = 0
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Description = "Reserva de la Biósfera Sian Ka'an",
+                            PlaceId = 8,
+                            Url = "https://elmomentoqroo.mx/wp-content/uploads/2025/06/Preservacion-de-la-flora-y-fauna-en-la-Reserva-de-Sian-Kaan-Foto-por-Patrimonio-Mundial-de-Mexico-UNESCO.png",
                             idPlace = 0
                         });
                 });
@@ -270,6 +422,48 @@ namespace natureApi.Migrations
                             Longitude = -93.367999999999995,
                             Name = "Sima de las Cotorras",
                             OpeningHours = "07:00-17:00"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Accessible = true,
+                            Category = "cenote",
+                            CreatedAt = new DateTime(2024, 4, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Cenote de agua cristalina rodeado de vegetación.",
+                            ElevationMeters = 0,
+                            EntryFee = 150.0,
+                            Latitude = 20.673999999999999,
+                            Longitude = -88.567999999999998,
+                            Name = "Cenote Ik Kil",
+                            OpeningHours = "09:00-17:00"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Accessible = true,
+                            Category = "cascada",
+                            CreatedAt = new DateTime(2024, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Impresionante cascada en la Sierra Tarahumara.",
+                            ElevationMeters = 1800,
+                            EntryFee = 80.0,
+                            Latitude = 28.187999999999999,
+                            Longitude = -107.209,
+                            Name = "Cascada Basaseachi",
+                            OpeningHours = "08:00-18:00"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Accessible = true,
+                            Category = "reserva",
+                            CreatedAt = new DateTime(2024, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Área protegida de selva y manglares en Quintana Roo.",
+                            ElevationMeters = 10,
+                            EntryFee = 100.0,
+                            Latitude = 19.363,
+                            Longitude = -87.754999999999995,
+                            Name = "Reserva de la Biósfera Sian Ka'an",
+                            OpeningHours = "08:00-17:00"
                         });
                 });
 
@@ -332,6 +526,36 @@ namespace natureApi.Migrations
                         {
                             PlaceId = 5,
                             AmenityId = 3
+                        },
+                        new
+                        {
+                            PlaceId = 6,
+                            AmenityId = 2
+                        },
+                        new
+                        {
+                            PlaceId = 6,
+                            AmenityId = 3
+                        },
+                        new
+                        {
+                            PlaceId = 7,
+                            AmenityId = 1
+                        },
+                        new
+                        {
+                            PlaceId = 7,
+                            AmenityId = 4
+                        },
+                        new
+                        {
+                            PlaceId = 8,
+                            AmenityId = 3
+                        },
+                        new
+                        {
+                            PlaceId = 8,
+                            AmenityId = 1
                         });
                 });
 
