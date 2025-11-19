@@ -4,6 +4,8 @@ using NatureApi;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("sqlServer");
+var openAIKey = builder.Configuration["OpenAIKey"];
+Console.WriteLine($"OpenAI Key: {openAIKey}");
 
 // Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
