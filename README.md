@@ -8,7 +8,7 @@ REST API for NatureApp with SQL Server database integration and Swagger document
 
 ![Tech](https://img.shields.io/badge/Purple_Future-Portfolio-974ECA?style=for-the-badge&labelColor=251139)
 
-[GitHub profile](https://github.com/Greys2004) · [Portfolio](https://greys2004.github.io/Curriculum/) · [Related application](https://github.com/Greys2004/NatureApp)
+[GitHub profile](https://github.com/Greys2004) · [Related application](https://github.com/Greys2004/NatureApp)
 
 </div>
 
